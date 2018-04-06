@@ -3,7 +3,7 @@
   width: 16%;
   overflow: hidden;
   float: left;
-  height: 92.9% !important;
+  height: 93%;
   background-color: $skinBlack;
   box-shadow: none;
   position: fixed;
@@ -31,8 +31,6 @@
   .header-item.tabs#tabs{
     li{
       display: block;
-      margin-bottom: 20px !important;
-
       a{
         height: 35px;
         line-height: 35px;
