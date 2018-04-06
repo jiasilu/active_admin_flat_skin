@@ -147,7 +147,7 @@ html {
       color: white;
     }
     .action_items a {
-      border-radius: 0 !important;
+      border-radius: 0;
       background: $skinActiveColor !important;
       color: white !important;
       box-shadow: none !important;
@@ -156,7 +156,7 @@ html {
       padding: 17px;
       font-size: 14px;
       &:hover {
-        background: lighten($skinActiveColor, 10%) !important;
+        background: lighten($skinActiveColor, 10%);
       }
     }
   }
