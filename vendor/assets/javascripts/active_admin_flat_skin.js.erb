@@ -11,19 +11,16 @@ jQuery(document).ready(function($) {
   if ($("#filters_sidebar_section").length > 0) {
     $("#main_content").prepend(
       $('<div class="bloc">').append(
-        $('<div class="icon-text">').append(
-          $('<img>').attr('src', "<%=image_path('svg/magnifying-glass.svg')%>"),
-          $('<a>').text('查找').attr({
-            href: '#value', id:'diplay-filter'
-          })
-        )
+        $('<a>').text('查找').attr({
+          href: '#value', id:'diplay-filter'
+        })
       )
     );
   }else{
     $("#main_content").addClass('with_side');
   };
 
-  $(document).on('click', '.icon-text', function(event) {
+  $(document).on('click', '#diplay-filter', function(event) {
     event.preventDefault();
     $('.overlay').show();
     $("#filters_sidebar_section").addClass('animated slideInUp').show();
