@@ -352,7 +352,7 @@ html {
     border-radius: 0;
     background: $skinActiveColor;
     color: white;
-    border: none;
+    border-radius: 6px;
     text-shadow: none;
     padding: 10px 15px;
     &:hover {

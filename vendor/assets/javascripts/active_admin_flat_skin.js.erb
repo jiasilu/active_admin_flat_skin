@@ -11,9 +11,12 @@ jQuery(document).ready(function($) {
   if ($("#filters_sidebar_section").length > 0) {
     $("#main_content").prepend(
       $('<div class="bloc">').append(
-        $('<a>').text('查找').attr({
-          href: '#value', id:'diplay-filter'
-        })
+        $('<div class="icon-text">').append(
+          $('<img>').attr('src', "<%=image_path('svg/magnifying-glass.svg')%>"),
+          $('<a>').text('查找').attr({
+            href: '#value', id:'diplay-filter'
+          })
+        )
       )
     );
   }else{
